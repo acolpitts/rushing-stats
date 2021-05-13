@@ -1,4 +1,4 @@
-# Rushing Stats App
+# Rushing Stats
 
 Example web application based on Node and React to display football player's rushing stats.
 
@@ -11,7 +11,7 @@ Example web application based on Node and React to display football player's rus
 
 ### Backend
 
-Start with getting the backend api up and running. With a valid mongodb URI in hand:
+Start by getting the backend server up and running. With a valid mongodb URI in hand:
 
 1. change into the backend directory
 1. make two copies of the .env.sample file: `.env` and `.env.test`
