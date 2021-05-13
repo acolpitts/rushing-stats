@@ -1,0 +1,8 @@
+# Dependencies
+node_modules
+# Environment Vars
+.env
+.env.test
+.env.production
+# Misc
+.DS_Store
