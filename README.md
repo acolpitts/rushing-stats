@@ -55,4 +55,8 @@ You should now have the backend server up and running. Let's switch to the front
 
 ### Frontend
 
-// TODO
+1. change directory into the `frontend` folder
+1. use yarn to install dependencies `yarn install`
+1. ensure the tests are passing `yarn test`
+1. start application `yarn start`
+1. Visit `http://localhost:3000` in your browser to view the app.
