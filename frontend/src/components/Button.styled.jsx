@@ -6,8 +6,8 @@ const Button = styled.button`
   color: white;
   background-color: #1698d7;
 
-  span {
-    font-size: 2rem;
+  .icon {
+    font-size: 1.5rem;
   }
 `;
 

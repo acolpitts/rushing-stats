@@ -1,7 +1,13 @@
 import React, { useState, useEffect, useMemo } from "react";
+import styled from "styled-components";
 
 import Layout from "../components/Layout.component";
 import Table from "../components/Table.component";
+
+const StyledSection = styled.section`
+  width: 100%;
+`;
+
 function App() {
   const [data, setData] = useState([]);
 
@@ -14,16 +20,12 @@ function App() {
     })();
   }, []);
 
-  /* 
-    - Columns is a simple array right now, but it will contain some logic later on. It is recommended by react-table to memoize the columns data
-    - Here in this example, we have grouped our columns into two headers. react-table is flexible enough to create grouped table headers
-  */
+  // table columns
   const columns = useMemo(
     () => [
       {
-        // first group - TV Show
+        // first group
         Header: " ",
-        // First group columns
         columns: [
           {
             Header: "Team",
@@ -50,11 +52,12 @@ function App() {
     ],
     []
   );
+
   return (
     <Layout>
-      <section>
+      <StyledSection>
         <Table defaultG columns={columns} data={data} />
-      </section>
+      </StyledSection>
     </Layout>
   );
 }

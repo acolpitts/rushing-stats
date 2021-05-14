@@ -69,7 +69,7 @@ export default function Table({ columns, data }) {
             exportData("csv", false);
           }}
         >
-          <span className="material-icons">file_download</span>
+          <span className="material-icons icon">file_download</span>
         </StyledButton>
       </StyledTabelHeader>
 
