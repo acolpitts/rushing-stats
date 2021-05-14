@@ -4,7 +4,7 @@ const Player = require("../models/player.model");
 const BASE_URL = "/api/v1/football";
 
 router.get(BASE_URL, async (req, res) => {
-  const { skip = 0, limit = 10 } = req.query;
+  const { skip = 0, limit = 0 } = req.query;
   const options = {
     skip: parseInt(skip), // Starting Row
     limit: parseInt(limit), // Ending Row
